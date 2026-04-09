@@ -1,1 +1,112 @@
 
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apk House - Mr Shadow</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background-color: #06050a; color: #f0fdf4; margin: 0; padding: 20px; }
+        .container { max-width: 550px; margin: 0 auto; }
+        
+        /* প্রোফাইল কার্ড */
+        .profile-card { text-align: center; background: #0f172a; border-radius: 20px; padding: 30px 20px; margin-bottom: 25px; border: 1px solid #10b981; box-shadow: 0 0 20px rgba(16, 185, 129, 0.2); }
+        .avatar { width: 90px; height: 90px; border-radius: 50%; border: 3px solid #10b981; padding: 3px; margin-bottom: 15px; object-fit: cover; background: #000; }
+        .profile-card h1 { margin: 0; font-size: 24px; color: #10b981; letter-spacing: 1px; font-weight: bold; }
+        .profile-card p { margin: 5px 0 15px; font-size: 14px; color: #94a3b8; }
+        
+        /* সোশ্যাল লিঙ্ক */
+        .social-links { margin-bottom: 5px; }
+        .social-links a { color: #f0fdf4; text-decoration: none; margin: 0 15px; font-size: 24px; transition: 0.3s; }
+        .social-links a:hover { color: #10b981; }
+
+        /* অ্যাপ লিস্ট */
+        .app-list { display: grid; gap: 12px; margin-bottom: 30px; }
+        .app-item { background: #1e293b; border-radius: 15px; padding: 15px; display: flex; align-items: center; justify-content: space-between; border: 1px solid #334155; transition: 0.3s; }
+        .app-item:active { transform: scale(0.97); border-color: #10b981; }
+        .app-info { display: flex; align-items: center; text-align: left; }
+        .app-icon-img { width: 52px; height: 52px; border-radius: 12px; margin-right: 15px; object-fit: cover; background: #0f172a; border: 1px solid #334155; }
+        .app-details h3 { margin: 0; font-size: 16px; color: #f1f5f9; font-weight: 600; }
+        .app-details p { margin: 3px 0 0; font-size: 12px; color: #94a3b8; }
+        .btn-get { background: #10b981; color: white; text-decoration: none; padding: 10px 20px; border-radius: 20px; font-size: 14px; font-weight: bold; }
+
+        /* কন্টাক্ট ফরম */
+        .contact-section { background: #0f172a; border-radius: 20px; padding: 25px; border: 1px solid #10b981; margin-top: 30px; margin-bottom: 50px; }
+        .contact-section h2 { font-size: 20px; color: #10b981; margin-bottom: 20px; text-align: center; }
+        .contact-form input, .contact-form textarea { width: 100%; padding: 12px; margin-bottom: 12px; border-radius: 10px; border: 1px solid #334155; background: #06050a; color: white; box-sizing: border-box; outline: none; }
+        .btn-submit { width: 100%; padding: 12px; border-radius: 10px; border: none; background: #10b981; color: white; font-weight: bold; cursor: pointer; transition: 0.3s; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="profile-card">
+        <img src="profile_pic.jpg" alt="Mr Shadow" class="avatar">
+        <h1>Mr Shadow</h1>
+        <p>Welcome to APK HOUSE</p>
+        
+        <div class="social-links">
+            <!-- ফেসবুক লিঙ্ক -->
+            <a href="https://www.facebook.com/fahhh.bicp" target="_blank"><i class="fab fa-facebook"></i></a>
+            
+            <!-- হোয়াটসঅ্যাপ বিজনেস লিঙ্ক -->
+            <a href="https://wa.me/8801620833678" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            
+            <!-- টেলিগ্রাম (লিঙ্ক থাকলে # এর জায়গায় বসাবেন) -->
+            <a href="#" target="_blank"><i class="fab fa-telegram"></i></a>
+        </div>
+    </div>
+
+    <div class="app-list">
+        <!-- 1. YouTube Morphe -->
+        <div class="app-item">
+            <div class="app-info">
+                <img src="youtube_morphe.jpg" class="app-icon-img" alt="icon">
+                <div class="app-details"><h3>YouTube Morphe</h3><p>Size: 173.58 MB</p></div>
+            </div>
+            <a href="https://github.com/omd23460-bro/Apk-House/releases/download/v1.0/youtube_morphe.apk" class="btn-get" download>Get</a>
+        </div>
+
+        <!-- 2. YouTube Music -->
+        <div class="app-item">
+            <div class="app-info">
+                <img src="youtube_music.jpg" class="app-icon-img" alt="icon">
+                <div class="app-details"><h3>YouTube Music</h3><p>Size: Latest</p></div>
+            </div>
+            <a href="https://github.com/omd23460-bro/Apk-House/releases/download/v1.0/youtube_music.apk" class="btn-get" download>Get</a>
+        </div>
+
+        <!-- 3. Morphe App -->
+        <div class="app-item">
+            <div class="app-info">
+                <img src="morphe.jpg" class="app-icon-img" alt="icon">
+                <div class="app-details"><h3>Morphe App</h3><p>Size: 23.16 MB</p></div>
+            </div>
+            <a href="morphe.apk" class="btn-get" download>Get</a>
+        </div>
+
+        <!-- 4. MicroG -->
+        <div class="app-item">
+            <div class="app-info">
+                <img src="microg.jpg" class="app-icon-img" alt="icon">
+                <div class="app-details"><h3>MicroG</h3><p>Size: 12.68 MB</p></div>
+            </div>
+            <a href="microg.apk" class="btn-get" download>Get</a>
+        </div>
+    </div>
+
+    <!-- ইমেইল ফরম -->
+    <div class="contact-section">
+        <h2>যোগাযোগ করুন (Apk House)</h2>
+        <form action="https://formspree.io/f/mdapynlv" method="POST" class="contact-form">
+            <input type="text" name="name" placeholder="আপনার নাম" required>
+            <input type="email" name="email" placeholder="আপনার ইমেইল" required>
+            <textarea name="message" rows="4" placeholder="আপনার মেসেজ..." required></textarea>
+            <button type="submit" class="btn-submit">মেসেজ পাঠান</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
