@@ -16,47 +16,61 @@
         .profile-card p { margin: 5px 0 15px; font-size: 14px; color: #94a3b8; }
         
         /* সোশ্যাল লিঙ্ক */
-        .social-links { margin-bottom: 5px; }
         .social-links a { color: #f0fdf4; text-decoration: none; margin: 0 15px; font-size: 24px; transition: 0.3s; }
         .social-links a:hover { color: #10b981; }
+
+        /* How To Use বড় কার্ড */
+        .tutorial-card {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            border-radius: 20px;
+            padding: 30px 20px;
+            margin-bottom: 30px;
+            text-align: center;
+            display: block;
+            text-decoration: none;
+            transition: 0.3s;
+            box-shadow: 0 10px 20px rgba(16, 185, 129, 0.3);
+            border: none;
+        }
+        .tutorial-card:hover { transform: translateY(-5px); box-shadow: 0 15px 25px rgba(16, 185, 129, 0.4); }
+        .tutorial-card i { font-size: 50px; color: white; margin-bottom: 10px; }
+        .tutorial-card h2 { margin: 10px 0 5px; font-size: 26px; color: white; font-weight: bold; }
+        .tutorial-card p { margin: 0; font-size: 15px; color: rgba(255, 255, 255, 0.9); }
 
         /* অ্যাপ লিস্ট */
         .app-list { display: grid; gap: 12px; margin-bottom: 30px; }
         .app-item { background: #1e293b; border-radius: 15px; padding: 15px; display: flex; align-items: center; justify-content: space-between; border: 1px solid #334155; transition: 0.3s; }
         .app-item:active { transform: scale(0.97); border-color: #10b981; }
         .app-info { display: flex; align-items: center; text-align: left; }
-        .app-icon-img { width: 52px; height: 52px; border-radius: 12px; margin-right: 15px; object-fit: cover; background: #0f172a; border: 1px solid #334155; display: flex; align-items: center; justify-content: center; font-size: 24px; color: #10b981; }
+        .app-icon-img { width: 52px; height: 52px; border-radius: 12px; margin-right: 15px; object-fit: cover; background: #0f172a; border: 1px solid #334155; }
         .app-details h3 { margin: 0; font-size: 16px; color: #f1f5f9; font-weight: 600; }
         .app-details p { margin: 3px 0 0; font-size: 12px; color: #94a3b8; }
         .btn-get { background: #10b981; color: white; text-decoration: none; padding: 10px 20px; border-radius: 20px; font-size: 14px; font-weight: bold; }
-        .btn-watch { background: #ef4444; color: white; text-decoration: none; padding: 10px 20px; border-radius: 20px; font-size: 14px; font-weight: bold; }
     </style>
 </head>
 <body>
 
 <div class="container">
+    <!-- প্রোফাইল -->
     <div class="profile-card">
         <img src="profile_pic.jpg" alt="Osman Gani" class="avatar">
         <h1>Osman Gani</h1>
         <p>𝐯𝐢𝐛𝐞 𝐜𝐨𝐨𝐝𝐞𝐫</p>
-        
         <div class="social-links">
-            <!-- ফেসবুক লিঙ্ক -->
             <a href="https://www.facebook.com/fahhh.t1xn" target="_blank"><i class="fab fa-facebook"></i></a>
         </div>
     </div>
 
-    <div class="app-list">
-        <!-- 1. How To Use -->
-        <div class="app-item">
-            <div class="app-info">
-                <div class="app-icon-img"><i class="fas fa-play-circle"></i></div>
-                <div class="app-details"><h3>How To Use</h3><p>Video Tutorial</p></div>
-            </div>
-            <a href="https://www.facebook.com/reel/2006187186633743/?mibextid=rS40aB7S9Ucbxw6v" target="_blank" class="btn-watch">Watch</a>
-        </div>
+    <!-- How To Use (বড় করে হাইলাইট করা) -->
+    <a href="https://www.facebook.com/reel/2006187186633743/?mibextid=rS40aB7S9Ucbxw6v" class="tutorial-card" target="_blank">
+        <i class="fas fa-play-circle"></i>
+        <h2>How To Use</h2>
+        <p>ভিডিও টিউটোরিয়াল দেখতে এখানে ক্লিক করুন</p>
+    </a>
 
-        <!-- 2. YouTube Morphe -->
+    <!-- অ্যাপ লিস্ট -->
+    <div class="app-list">
+        <!-- 1. YouTube Morphe -->
         <div class="app-item">
             <div class="app-info">
                 <img src="youtube_morphe.jpg" class="app-icon-img" alt="icon">
@@ -65,7 +79,7 @@
             <a href="https://www.apkmirror.com/apk/google-inc/youtube/youtube-20-51-39-release/youtube-20-51-39-3-android-apk-download/" class="btn-get" download>Get</a>
         </div>
 
-        <!-- 3. Morphe App -->
+        <!-- 2. Morphe App -->
         <div class="app-item">
             <div class="app-info">
                 <img src="morphe.jpg" class="app-icon-img" alt="icon">
@@ -74,7 +88,7 @@
             <a href="morphe.apk" class="btn-get" download>Get</a>
         </div>
 
-        <!-- 4. MicroG -->
+        <!-- 3. MicroG -->
         <div class="app-item">
             <div class="app-info">
                 <img src="microg.jpg" class="app-icon-img" alt="icon">
